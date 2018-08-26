@@ -1,0 +1,12 @@
+language: go
+go:
+  - 1.x
+os:
+  - linux
+  - osx
+sudo: false
+install: true
+
+script:
+  - GO111MODULE=on go build 
+  - GO111MODULE=on go test
