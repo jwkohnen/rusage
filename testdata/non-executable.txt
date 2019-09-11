@@ -1,0 +1,4 @@
+#!/bin/sh
+
+&>2 > echo "This should not execute, especially not successfully."
+exit 0

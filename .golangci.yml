@@ -1,0 +1,32 @@
+linters-settings:
+  govet:
+    check-shadowing: true
+  golint:
+    min-confidence: 0
+  gocyclo:
+    min-complexity: 10
+  maligned:
+    suggest-new: true
+  dupl:
+    threshold: 100
+  goconst:
+    min-len: 2
+    min-occurrences: 2
+  depguard:
+    list-type: blacklist
+    packages:
+      - github.com/Sirupsen/logrus
+  misspell:
+    locale: US
+    auto-fix: true
+  lll:
+    line-length: 140
+  goimports:
+    local-prefixes: github.com/jwkohnen/rusage
+
+linters:
+  enable-all: true
+
+run:
+  skip-dirs:
+    - testdata

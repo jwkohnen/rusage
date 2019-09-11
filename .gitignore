@@ -1,0 +1,6 @@
+core
+/rusage.test
+/cmd/prometheus-rusage-pusher/prometheus-rusage-pusher
+/cmd/rusage/rusage
+/pusher/testdata/generated/bin
+/pusher/pusher.test
